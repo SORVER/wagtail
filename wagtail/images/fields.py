@@ -184,9 +184,7 @@ class WagtailImageField(ImageField):
 
 
 def image_format_name_to_content_type(image_format_name):
-    """
-    Convert a Willow image format name to a content type.
-    """
+    # Convert a Willow image format name to a content type.
     if image_format_name == "svg":
         return "image/svg+xml"
     elif image_format_name == "jpeg":
